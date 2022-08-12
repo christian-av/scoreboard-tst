@@ -5,9 +5,20 @@
 <title>Scoreboard</title>
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-	
+	<script>
+                window.onbeforeunload = function() {
+                    return "Are you sure you want to leave?";
+                };
+        </script>
 <body>
         <div id="app"></div>
         <script type="module" src="main.js"></script>
+        <div class="text">
+                <p> <b>Game Information</b> <br>
+                        Information: <i>This scoreboard is still in development. <br>
+                        Don't refresh the browser to avoid data loss. Thank you. </i>
+                
+                </p>
+        </div>
 </body>
 </html>
